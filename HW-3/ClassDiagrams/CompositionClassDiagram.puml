@@ -1,0 +1,27 @@
+@startuml
+abstract class FileSystemEntity{
+-name: String
+-isDeleted: boolean
++getName(): String
++setName(name: String): void
++isDeleted(): boolean
++delete(): void
++print(): void
+}
+
+class File{
+}
+
+class Folder{
+-subs: List<FileSystemEntity> {readOnly}
++addToSubs(sub: FileSystemEntity): void
++delete(): void
++print():void
+}
+
+Folder *-- File
+Folder *-- Folder
+FileSystemEntity <-- File
+FileSystemEntity <-- Folder
+
+@enduml
