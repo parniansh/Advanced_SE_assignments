@@ -1,0 +1,35 @@
+@startuml
+
+object "<u>ship:Ship</u>" as ship1Obj{
+shipName = "ship"
+yearBuilt = "2023"
+}
+
+object "<u>cruiseShip:Ship</u>" as ship2Obj{
+shipName = "cruiseShip"
+yearBuilt = "2024"
+}
+
+object "<u>cargoShip:Ship</u>" as ship3Obj{
+shipName = "cargoShip"
+yearBuilt = "2019"
+}
+
+object "<u>cruiseShip:CruiseShip</u>" as crs{
+maxPassengers  = 50
+}
+
+object "<u>cargoShip:CargoShip</u>" as cgs{
+capacity = 5435
+}
+
+crs --|> ship2Obj
+cgs --|> ship3Obj
+
+map ships {
+ 0 *--> ship1Obj
+ 1 *--> ship2Obj
+ 2 *--> ship3Obj
+}
+@enduml
+

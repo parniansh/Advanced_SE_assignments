@@ -1,0 +1,24 @@
+@startuml
+
+object "<u>instructor: Instructor</u>" as instructor{
+firstName = "Nima"
+lastName = "Davarpanah"
+officeNumber = "3-2636"
+}
+
+object "<u>textBook: TextBook</u>" as textBook{
+title = "CleanCode: A Handbook of Agile Software Craftsmanship"
+author = "Robert Cecil Martin"
+publisher = "Pearson"
+}
+
+object "<u>course: Course</u>" as course{
+name = "CS5800 - Advanced Software Engineering"
+instructors = [instructor]
+textbooks = [textBook]
+}
+
+course o-- instructor
+course o-- textBook
+
+@enduml

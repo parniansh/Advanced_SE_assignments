@@ -1,0 +1,48 @@
+@startuml
+object "<u>demo1: Folder</u>" as demo1{
+name = "demo1"
+}
+
+object "<u>sourceFiles: Folder</u>" as sourceFiles{
+name = "Source Files"
+}
+object "<u>.phalcon: Folder</u>" as phalcon{
+name = ".phalcon"
+}
+object "<u>cache: Folder</u>" as cache{
+name = "cache"
+}
+object "<u>public: Folder</u>" as public{
+name = "public"
+}
+
+object "<u>includePath: Folder</u>" as include{
+name = "Include Path"
+}
+
+object "<u>remoteFiles: Folder</u>" as remote{
+name = "Remote Files"
+}
+
+object "<u>htaccess: File</u>" as htaccess{
+name = ".htaccess"
+}
+object "<u>htrouter.php: File</u>" as htrouter{
+name = ".htrouter.php"
+}
+object "<u>Index: File</u>" as index{
+name = "Index.html"
+}
+
+
+demo1 *-- sourceFiles
+demo1 *-- include
+demo1 *-- remote
+sourceFiles *-- phalcon
+sourceFiles *-- cache
+sourceFiles *-- public
+public *-- htaccess
+public *-- htrouter
+public *-- index
+
+@enduml
