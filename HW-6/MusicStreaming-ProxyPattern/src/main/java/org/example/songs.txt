@@ -1,0 +1,11 @@
+
+1,Hey Jude,Revolver,07:08
+2,Bohemian Rhapsody,The Dark Side of the Moon,05:55
+3,Like a Rolling Stone,The Wall,06:09
+4,Imagine,Abbey Road,03:05
+5,Smells Like Teen Spirit,Back in Black,05:01
+6,Hotel California,The Joshua Tree,06:30
+7,Let It Be,Exile on Main St.,04:03
+8,Stairway to Heaven,Sticky Fingers,08:02
+9,Thriller,Let It Be,05:57
+10,Sweet Child O' Mine,Appetite for Destruction,05:56
