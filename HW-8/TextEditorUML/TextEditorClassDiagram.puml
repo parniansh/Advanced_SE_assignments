@@ -1,0 +1,42 @@
+@startuml
+
+class Character{
+-Character: Char
+-characterProperty:CharacterProperties
++getCharacter(): Char
++getFont():String
++getColor(): String
++getSize(): int
++setCharacter(Character:Char):void
++setCharacterProperty(characterProperty:CharacterProperties):void
+}
+
+class CharacterProperties{
+-font: String
+-color: String
+-size: int
++getFont: String
++getColor:String
++getSize:int
+}
+
+class CharacterPropertiesFactory{
+-flyweights :Map<String,CharacterProperties>
++setAndRetrieveFlyweightCharacterProperties(font:String,color:String,size:int):CharacterProperties
++sizeOfMap():int
+}
+
+class Document{
+-characters: List<Character>
+-propertiesFactory:CharacterPropertiesFactory
++addCharacter(c:Char,font:String,color:String,size:int)
++editCharacterProperties(index:int,font:String,color:String,size:int)
++saveToFile(filename:String)
++loadFromFile(filename:String)
+}
+
+Character o-- CharacterProperties
+CharacterPropertiesFactory *-- CharacterProperties
+Document *-- Character
+
+@enduml

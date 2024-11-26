@@ -1,0 +1,80 @@
+@startuml
+object "<u>testDocument:Document</u>" as document{
+}
+
+object "<u> H:Character</u>" as h{
+}
+object "<u>e:Character</u>" as e{
+}
+object "<u>l:Character</u>" as l1{
+}
+object "<u>l:Character</u>" as l2{
+}
+object "<u>o:Character</u>" as o{
+}
+object "<u>W:Character</u>" as w{
+}
+object "<u>o:Character</u>" as o2{
+}
+object "<u>r:Character</u>" as r{
+}
+object "<u>l:Character</u>" as l3{
+}
+object "<u>d:Character/u>" as d{
+}
+object "<u>C:Character</u>" as C{
+}
+object "<u>S:Character</u>" as s{
+}
+object "<u>5:Character</u>" as 5{
+}
+object "<u>8:Character</u>" as 8{
+}
+object "<u>0:Character</u>" as 00{
+}
+object "<u>0:Character</u>" as 01{
+}
+object "<u>Arial_Black_16:CharacterProperties</u>" as AB16{
+}
+object "<u>Arial_Black_14:CharacterProperties</u>" as AB14{
+}
+object "<u>Verdana_Blue_18:CharacterProperties</u>" as VB18{
+}
+object "<u>Verdana_Red_12:CharacterProperties</u>" as VR12{
+}
+object "<u>Calibri_Blue_99:CharacterProperties</u>" as CB99{
+}
+
+h o-- CB99
+e o-- AB14
+l1 o-- AB14
+l2 o-- AB14
+o o-- AB14
+w o-- CB99
+o2 o-- AB14
+r o-- AB14
+l3 o-- AB14
+d o-- AB14
+C o-- VB18
+s o-- VB18
+5 o-- VR12
+8 o-- VR12
+00 o-- VR12
+01 o-- VR12
+document *-- h
+document *-- e
+document *-- l1
+document *-- l2
+document *-- o
+document *-- w
+document *-- o2
+document *-- r
+document *-- l3
+document *-- d
+document *-- C
+document *-- s
+document *-- 5
+document *-- 8
+document *-- 00
+document *-- 01
+@enduml
